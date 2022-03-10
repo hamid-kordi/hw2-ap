@@ -3,8 +3,6 @@
 
 
 
-class client {
-public :
 class Server
 {
 public:
@@ -18,7 +16,6 @@ public:
 private:
 	std::map<std::shared_ptr<Client>, double> clients;
 };
-
 
 private :
 
