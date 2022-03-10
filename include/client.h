@@ -4,10 +4,13 @@
 
 class client{
  public :
+ 
+void fill() const;
 
 
- private :
-
+  size_t N;
+    int* arr;
+};
 
 }
 

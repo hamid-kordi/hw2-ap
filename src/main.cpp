@@ -8,10 +8,8 @@
 int main(int argc, char **argv)
 {
 
-
-
-
-
+Client d{}
+d.fill()
     /* if (false) // make false to run unit-tests
     {
         // debug section
