@@ -1,4 +1,4 @@
-#include "crypto.h"
+/* #include "crypto.h"
 
 RSA* crypto::createPrivateRSA(std::string key) {
   RSA *rsa = NULL;
@@ -193,4 +193,4 @@ std::string crypto::sha256(std::string s)
     }
     outputBuffer[64] = 0;
     return std::string{outputBuffer};
-}
+} */

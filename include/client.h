@@ -1,20 +1,15 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-class client {
-public:
 
-client()
-
+class client{
+ public :
 
 
-
-private :
-
-size_t h;
+ private :
 
 
-};
+}
 
 
 #endif //CLIENT_H

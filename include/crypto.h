@@ -1,4 +1,4 @@
-#ifndef CRYPTO_H
+/* #ifndef CRYPTO_H
 #define CRYPTO_H
 
 #include <iostream>
@@ -50,4 +50,4 @@ namespace crypto{
   std::string sha256(std::string s);
 
 }
-#endif //CRYPTO_H
+#endif //CRYPTO_H */
