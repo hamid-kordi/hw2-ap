@@ -1,27 +1,23 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-Class client {
-public :
-class Server
+
+class Client
 {
 public:
-	Server();
-	std::shared_ptr<Client> add_client(std::string id);
-	std::shared_ptr<Client> get_client(std::string id);
-	double get_wallet(std::string id);
-	bool parse_trx(std::string trx, std::string sender, std::string receiver, double value);
-	bool add_pending_trx(std::string trx, std::string signature);
-	size_t mine();
+	Client(std::string id, const Server& server);
+	std::string get_id();
+	std::string get_publickey();
+	double get_wallet();
+	std::string sign(std::string txt);
+	bool transfer_money(std::string receiver, double value);
+	size_t generate_nonce();
 private:
-	std::map<std::shared_ptr<Client>, double> clients;
+	Server const* const server;
+	const std::string id;
+	std::string public_key;
+	std::string private_key;
 };
 
-
-private :
-
-
-
-};
 
 #endif //CLIENT_H
